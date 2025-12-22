@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Embedding</title>
+</head>
+<body>
+    <!-- Method 1 -->
+    <video src="video.mp4" autoplay muted controls width="500">
+        Your browser does not support the video tag.
+    </video>
+   
+
+    <!-- Method 2 -->
+    <video width="500" autoplay muted controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.     <!-- If the video not found then this message will be seen.-->
+</body>
+</html>
