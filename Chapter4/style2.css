@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page styling */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Heading */
+h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Table head */
+thead {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+}
+
+thead th {
+    padding: 14px 16px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Table body */
+tbody td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Highlight player name column */
+tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #ffe0b2;
+    cursor: pointer;
+}
+
+/* Border bottom */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+}
